@@ -9,7 +9,7 @@ function Media() {
 
     function MediaImg(props) {
         return (
-            <div className="media-img-container">
+            <div data-aos="fade-down" data-aos-duration="1000" className="media-img-container">
                 <input className="checkBox" type="checkbox" />
                 <img className="media-slider-img" src="imgs/car.jpg" alt="" />
             </div>
@@ -34,7 +34,7 @@ function Media() {
 
                 <div className="media-slider">
 
-                    <div className="media-ico-container">
+                    <div data-aos="fade-right" data-aos-duration="1000" className="media-ico-container">
                         <img className="add-ico" src="imgs/add.svg" alt="" />
                         <h4 className="addText">Add Media</h4>
                     </div>

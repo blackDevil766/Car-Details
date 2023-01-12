@@ -4,7 +4,7 @@ function Agent(props) {
 
     function AgentName(props) {
         return(
-            <li><img className="agent-leads-img" src={props.img} alt="" />  Agent: Ahmed Allam</li>
+            <li data-aos="fade-top" data-aos-duration="1000"><img className="agent-leads-img" src={props.img} alt="" />  Agent: Ahmed Allam</li>
         )
     }
 

@@ -19,7 +19,6 @@ function Sales() {
             <div className="progress" >
                 <div className="progress-bar" style={{ width: props.percent }}>
                     <span className="percent-label">{props.percent}</span>
-
                 </div>
             </div>
         )
@@ -27,7 +26,7 @@ function Sales() {
 
     return (
         <>
-            <div className="sales-container">
+            <div data-aos="fade-down" data-aos-duration="1000" className="sales-container">
 
                 <div className="sales-section">
                     <h4>Sales</h4>

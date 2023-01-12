@@ -6,7 +6,7 @@ function LeadCalls() {
 
     function LeadData(props) {
         return (
-            <tr>
+            <tr data-aos="fade-down">
                 <td>
                     <div className="leads-data-container">
                         <div className="leadImg">
@@ -35,7 +35,7 @@ function LeadCalls() {
             <div className="Records-container">
                 <hr />
                 <Table striped bordered hover>
-                    <thead>
+                    <thead data-aos="fade-down">
                         <tr>
                             <th> <input type="checkbox" /> Leads</th>
                             <th>Best Time</th>

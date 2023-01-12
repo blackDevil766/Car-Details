@@ -29,7 +29,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -45,6 +48,15 @@
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -59,7 +71,20 @@
 
     <script>
         var Alert = ReactBootstrap.Alert;
+        AOS.init({
+            duration: 1200,
+        });
+
+        $(document).ready(function() {
+
+            setTimeout(function() {
+                $('body').addClass('loaded');
+                $('h1').css('color', '#222222');
+            }, 3000);
+
+        });
     </script>
+
 </body>
 
 </html>

@@ -6,7 +6,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 function CarDesciption(props) {
     return (
         <>
-            <div className="car-description-container">
+            <div data-aos="fade-down" data-aos-duration="1000" className="car-description-container">
                 <div className="car-Desciption">
                     <div className="car-img"><img src="imgs/car.jpg" alt="" /></div>
                     <div className="car-data">
