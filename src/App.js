@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Agent from './component/agent/Agent';
+import CarDesciption from "./component/1CarDesciption"
+import Target from './component/2Target';
+import LeadCalls from './component/3LeadsCalls';
+import Media from './component/4Media';
+import Sales from './component/5Sales';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="home-section">
+        
+        <div className="header-part">
+          <CarDesciption />
+          <Target />
+        </div>
+
+        <div className="bottom-section">
+          <LeadCalls />
+          <Media />
+          <Sales />
+        </div>
+
+      </div>
+
+
+      <div className="agent-section">
+        <Agent />
+      </div>
+
     </div>
   );
 }
